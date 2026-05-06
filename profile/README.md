@@ -40,14 +40,20 @@ Five minutes to first flag: [docs.flipswitch.io/docs/getting-started/quick-start
 
 ## SDKs
 
+**Official SDKs** with real-time updates over SSE:
+
 | Language | Repo | Install |
 |----------|------|---------|
 | JavaScript / TypeScript | [`js-sdk`](https://github.com/flipswitch-io/js-sdk) | `@flipswitch-io/server-provider`, `@flipswitch-io/web-provider` |
+| Java | [`java-sdk`](https://github.com/flipswitch-io/java-sdk) | `io.flipswitch:flipswitch-sdk` on Maven Central |
 | Python | [`python-sdk`](https://github.com/flipswitch-io/python-sdk) | `flipswitch-provider` on PyPI |
 | Go | [`go-sdk`](https://github.com/flipswitch-io/go-sdk) | `github.com/flipswitch-io/go-sdk` |
-| Java | [`java-sdk`](https://github.com/flipswitch-io/java-sdk) | `io.flipswitch:flipswitch-sdk` on Maven Central |
 
 All MIT-licensed. All built on top of the official OpenFeature SDKs, no proprietary fork.
+
+**Any other language** works through the [OpenFeature OFREP provider](https://openfeature.dev/specification/sections/providers/) pointed at `https://api.flipswitch.io`. Polling-based rather than real-time, but works today with **.NET, Rust, Swift, PHP, Ruby**, and anything else OpenFeature supports. Per-language setup: [docs.flipswitch.io/docs/sdks](https://docs.flipswitch.io/docs/sdks).
+
+**Framework integrations** on top of the JavaScript SDK: [React](https://docs.flipswitch.io/docs/sdks/react), [Angular](https://docs.flipswitch.io/docs/sdks/angular), [NestJS](https://docs.flipswitch.io/docs/sdks/nestjs).
 
 ## Why Flipswitch
 
